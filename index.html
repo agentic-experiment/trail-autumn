@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Autumn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui">
+        <div id="score">Leaves: 0</div>
+        <div id="distance">Distance: 0m</div>
+        <div id="combo" class="hidden">Combo: x1</div>
+    </div>
+    <div id="startScreen" class="screen">
+        <h1>Trail Autumn</h1>
+        <p>Guide the wanderer through the autumn forest</p>
+        <button id="startBtn">Begin Journey</button>
+        <div class="controls">
+            <span>← → or A/D to steer</span>
+            <span>Space to dash</span>
+        </div>
+    </div>
+    <div id="gameOverScreen" class="screen hidden">
+        <h1>Journey's End</h1>
+        <div id="finalScore">Leaves collected: 0</div>
+        <div id="finalDistance">Distance traveled: 0m</div>
+        <button id="restartBtn">Walk Again</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
